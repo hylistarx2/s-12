@@ -63,7 +63,7 @@ header::after{
 
 .section-title{
   color:#7a0b0b;
-  font-size:46px;
+  font-size:50px;
   font-weight:800;
   margin:30px 0 20px;
   border-left:8px solid #7a0b0b;
@@ -113,6 +113,21 @@ header::after{
   .section-content{font-size:22px;}
   .row-image{width:100%;}
 }
+.content-image,
+.row-image{
+  transition: transform 0.4s ease, box-shadow 0.4s ease;
+}
+
+.content-image:hover{
+  transform: scale(1.05);
+  box-shadow: 0 12px 30px rgba(0,0,0,0.25);
+}
+
+.row-image:hover{
+  transform: scale(1.08);
+  box-shadow: 0 10px 25px rgba(0,0,0,0.25);
+}
+
 </style>
 </head>
 
