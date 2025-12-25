@@ -3,25 +3,29 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
 <title>Sử 12A5 - Nhóm 4 Bùi Thị Xuân</title>
 
-<style>
-*{
-  box-sizing:border-box;
-  scroll-behavior:smooth;
-}
+<!-- META SEO -->
+<meta name="description" content="Bài Sử 12A5: Hội nhập quốc tế của Việt Nam. Nhóm 4 - Trường THPT Bùi Thị Xuân.">
+<meta name="keywords" content="Sử 12, Hội nhập quốc tế Việt Nam, Sử 12A5, Bùi Thị Xuân">
+<meta name="author" content="Nhóm 4 - Lớp 12A5">
 
+<meta name="robots" content="index, follow">
+
+<meta property="og:title" content="Hội nhập quốc tế của Việt Nam - Sử 12A5">
+<meta property="og:description" content="Bài học Sử 12A5 - Nhóm 4 - THPT Bùi Thị Xuân">
+<meta property="og:type" content="website">
+
+<style>
+*{box-sizing:border-box;scroll-behavior:smooth;}
 body{
   margin:0;
   background:#f2f3f5;
   font-family:"Times New Roman", Times, serif;
   color:#222;
 }
-
-/* HEADER */
-header{
-  position:relative;
-}
+header{position:relative;}
 header img{
   width:100%;
   max-width:1000px;
@@ -42,8 +46,6 @@ header::after{
   font-weight:800;
   text-shadow:0 4px 10px rgba(0,0,0,0.6);
 }
-
-/* CONTAINER */
 .container{
   max-width:850px;
   margin:40px auto;
@@ -52,19 +54,13 @@ header::after{
   border-radius:10px;
   box-shadow:0 15px 40px rgba(0,0,0,0.12);
 }
-
-/* HIỆU ỨNG CHUNG */
 .fade{
   opacity:0;
   transform:translateY(40px);
-  transition:all 0.8s ease;
+  transition:all 0.9s ease;
 }
-.fade.show{
-  opacity:1;
-  transform:none;
-}
+.fade.show{opacity:1;transform:none;}
 
-/* TIÊU ĐỀ */
 .section-title{
   color:#7a0b0b;
   font-size:46px;
@@ -73,35 +69,24 @@ header::after{
   border-left:8px solid #7a0b0b;
   padding-left:15px;
 }
-
 .section-subtitle{
   font-size:30px;
   font-weight:700;
   margin:30px 0 15px;
-  color:#333;
 }
-
 .section-content{
   font-size:24px;
   line-height:1.8;
   text-align:justify;
   margin-bottom:30px;
 }
-
-/* ẢNH */
 .content-image{
   width:100%;
   max-width:720px;
   display:block;
   margin:20px auto 10px;
   border-radius:8px;
-  transition:transform 0.4s ease, box-shadow 0.4s ease;
 }
-.content-image:hover{
-  transform:scale(1.03);
-  box-shadow:0 10px 25px rgba(0,0,0,0.25);
-}
-
 .image-caption{
   text-align:center;
   font-size:18px;
@@ -109,8 +94,6 @@ header::after{
   font-style:italic;
   margin-bottom:40px;
 }
-
-/* 2 ẢNH */
 .image-row{
   display:flex;
   justify-content:center;
@@ -122,12 +105,7 @@ header::after{
   width:calc(50% - 10px);
   max-width:360px;
   border-radius:8px;
-  transition:transform 0.4s ease;
 }
-.row-image:hover{
-  transform:scale(1.05);
-}
-
 @media(max-width:768px){
   header::after{font-size:28px;}
   .section-title{font-size:36px;}
@@ -168,6 +146,20 @@ Việt Nam đã ký kết và thực hiện 16 hiệp định thương mại t�
 <img src="z7354770092921_388b0933f6893d70991521b917510ea4.jpg" class="content-image fade">
 <p class="image-caption fade">Ký kết Hiệp định Thương mại Tự do (FTA)</p>
 
+<div class="section-subtitle fade">
+Chủ động tham gia và ký kết nhiều Hiệp định Thương mại Tự do thế hệ mới
+</div>
+
+<img src="z7354770434688_abe5dad6a1b77fa8f308b21efa929b69.jpg" class="content-image fade">
+<p class="image-caption fade">Việt Nam tại Đại hội đồng AIPA-44</p>
+
+<div class="section-subtitle fade">
+Đề xuất sáng kiến và tham gia giải quyết các vấn đề chính trị, xã hội, an ninh, kinh tế,... của khu vực và quốc tế
+</div>
+<div class="section-content fade">
+Việt Nam đề xuất ba sáng kiến/ nghị quyết tại Đại hội đồng AIPA-44 (Liên minh các Nghị viện ASEAN) trong chủ đề chung là tăng cường thích ứng, đoàn kết và thịnh vượng cho ASEAN.
+</div>
+
 <div class="section-title fade">BÀI HỌC KINH NGHIỆM</div>
 
 <div class="section-subtitle fade">
@@ -188,16 +180,13 @@ Việt Nam kết hợp sức mạnh nội lực và ngoại lực, sức mạnh 
 </div>
 
 <script>
-const faders = document.querySelectorAll('.fade');
-const observer = new IntersectionObserver(entries => {
-  entries.forEach(entry => {
-    if(entry.isIntersecting){
-      entry.target.classList.add('show');
-    }
+const faders=document.querySelectorAll('.fade');
+const observer=new IntersectionObserver(entries=>{
+  entries.forEach(e=>{
+    if(e.isIntersecting) e.target.classList.add('show');
   });
 },{threshold:0.2});
-
-faders.forEach(el => observer.observe(el));
+faders.forEach(el=>observer.observe(el));
 </script>
 
 </body>
